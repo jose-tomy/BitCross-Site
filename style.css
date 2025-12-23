@@ -240,6 +240,8 @@ footer {
   background: none;
   padding: 0;
   overflow: hidden;
+  display: block;
+  /* Fix for Safari image sizing issue inside flex container */
 }
 
 .app-icon.img-icon img {
