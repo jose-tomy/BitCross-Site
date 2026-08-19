@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xenophon — Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for Xenophon.">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 42rem;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: #e0e0e0;
+                background-color: #121212;
+            }
+            a {
+                color: #8ab4f8;
+            }
+            hr {
+                background-color: #30363d;
+            }
+            h1, h2 {
+                border-bottom: 1px solid #30363d;
+            }
+        }
+
+        h1, h2, h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        p, ul, ol {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            padding-left: 2rem;
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        hr {
+            height: 1px;
+            padding: 0;
+            margin: 2rem 0;
+            background-color: #eaecef;
+            border: 0;
+        }
+
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Xenophon — Privacy Policy</h1>
+    <p><strong>Last updated:</strong> 19 August 2026</p>
+
+    <p>Xenophon transcribes audio into text entirely on your iPhone. This policy explains what that means in practice, what the app stores, and the few occasions it uses the network.</p>
+    <p>It is written to be specific rather than defensive. Where something is more complicated than the marketing line, it says so — the section on backups below is the main example.</p>
+
+    <hr>
+
+    <h2>The short version</h2>
+    <ul>
+        <li><strong>Xenophon has no accounts, no server, and no analytics.</strong> There is nothing to sign into and nowhere for your data to go.</li>
+        <li><strong>Your audio and your transcripts never leave your iPhone.</strong> They are not uploaded, not shared, and not seen by us or anyone else.</li>
+        <li><strong>We collect nothing about you.</strong> Not your recordings, not your transcripts, not usage data, not identifiers, not crash analytics of our own.</li>
+        <li>The app uses the network for exactly three things, none of which send anything of yours: downloading the speech model once, downloading the speaker-identification model if you ask for that feature, and processing a purchase through Apple.</li>
+    </ul>
+
+    <hr>
+
+    <h2>What stays on your iPhone</h2>
+    <p>All of the following is stored locally, in Xenophon's own private app storage, and is never transmitted:</p>
+    <ul>
+        <li><strong>Recordings</strong> you make in the app, and <strong>audio files</strong> you import or share into it.</li>
+        <li><strong>Transcripts</strong>, including titles you type and any speaker names you assign.</li>
+        <li><strong>Speaker labels</strong> worked out by the speaker-identification feature.</li>
+        <li><strong>A small amount of app state</strong> — whether you have finished the intro screens, whether you prefer to keep a copy of imported audio, how many transcriptions you have completed against the free allowance, and a few counters used to decide whether to ask you to rate the app. None of this identifies you, and none of it is transmitted.</li>
+    </ul>
+    <p>Xenophon can read an audio file you explicitly choose — through the file picker, or by sharing one into the app. It has no access to your files otherwise, and it does not scan your device.</p>
+
+    <hr>
+
+    <h2>Backups: the one place "never leaves your device" needs a caveat</h2>
+    <p>If you back your iPhone up, <strong>your Xenophon transcripts and any audio the app has kept are included in that backup</strong>, the same as data from most other apps. If your backup goes to iCloud, that means a copy sits in your Apple account.</p>
+    <p>This is worth stating plainly because it is the one exception to the simple version of the promise. Some points that matter:</p>
+    <ul>
+        <li>It is <strong>your</strong> backup, under your Apple ID, protected by Apple's encryption — not a copy sent to us. We have no access to it and no way to request it.</li>
+        <li>It happens because you have backups turned on for your device, not because Xenophon does anything to send it.</li>
+        <li>You can exclude it by turning off backups for Xenophon in your device's iCloud settings.</li>
+        <li>The downloaded speech and speaker models are <strong>deliberately excluded</strong> from backups, since they are large and can simply be downloaded again. Only your own content is included.</li>
+    </ul>
+
+    <hr>
+
+    <h2>When Xenophon uses the network, and what is sent</h2>
+    <p>Xenophon works offline once it is set up. There are three exceptions, and <strong>none of them transmit your audio, your transcripts, or anything derived from them.</strong></p>
+
+    <h3>1. Downloading the speech model (once)</h3>
+    <p>Transcription runs on a speech model that the app downloads on first use, roughly 140 MB, from Hugging Face — the service that hosts it on behalf of Argmax, Inc., who publish it. After that, transcription needs no connection at all and works in airplane mode.</p>
+    <p>This is an ordinary file download. Hugging Face receives what any web server receives when you download a file: your IP address and standard request information. It does not receive anything about you from us, and it has no idea what you intend to transcribe.</p>
+
+    <h3>2. Downloading the speaker-identification model (only if you ask)</h3>
+    <p>If you use the "Identify speakers" feature, the app downloads a second model, roughly 33 MB, from the same source. If you never use that feature, this download never happens. The same applies: a file download, nothing of yours sent.</p>
+
+    <h3>3. Purchases</h3>
+    <p>Buying the unlimited unlock, or restoring a previous purchase, goes through Apple's App Store. Apple handles the entire transaction. <strong>We never see your payment details, your name, or your Apple ID.</strong> Xenophon only learns whether this device is entitled to the unlock — a yes or no, held locally.</p>
+
+    <hr>
+
+    <h2>The microphone</h2>
+    <p>Xenophon asks for microphone access only if you use the in-app recorder, and uses it only while a recording is actually running. Recordings are written straight to the app's own private storage. They are not streamed anywhere, and nothing listens in the background.</p>
+    <p>You can revoke microphone access at any time in your device's Settings; the rest of the app continues to work, and you can still import audio.</p>
+
+    <hr>
+
+    <h2>Diagnostics</h2>
+    <p>Xenophon can assemble a diagnostic report of its own activity from the current session — the kind of thing that helps work out why a download failed or a file would not open.</p>
+    <p>This is <strong>entirely under your control:</strong></p>
+    <ul>
+        <li>Nothing is collected or sent in the background, ever.</li>
+        <li>You open the report, read the whole thing on screen, and choose whether to send it and to whom.</li>
+        <li>File paths are stripped out before it is shown to you.</li>
+        <li>It contains no audio and no transcript text.</li>
+    </ul>
+    <p>If you do send it to us, we use it only to diagnose the problem you contacted us about.</p>
+
+    <hr>
+
+    <h2>Crash reports</h2>
+    <p>We ship no crash-reporting service. If you have chosen to share crash and analytics data with developers in your device's privacy settings, Apple may provide us with anonymised crash reports through App Store Connect. Those are Apple's, subject to Apple's privacy terms, and contain no recordings or transcripts. You can turn that off in Settings → Privacy & Security → Analytics & Improvements.</p>
+
+    <hr>
+
+    <h2>What Xenophon does not do</h2>
+    <p>Stated explicitly, because in this category these are not safe assumptions:</p>
+    <ul>
+        <li>No user accounts, logins, or profiles.</li>
+        <li>No analytics or telemetry SDKs of any kind.</li>
+        <li>No advertising, ad networks, or ad identifiers.</li>
+        <li>No tracking across apps or websites. Xenophon does not ask for tracking permission because it has nothing to track you with.</li>
+        <li>No selling or sharing of data with data brokers — there is no data to sell.</li>
+        <li>No use of your recordings or transcripts to train any model, ours or anyone else's.</li>
+        <li>No cloud sync of transcripts.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Your control over your data</h2>
+    <p>Because everything is local, you do not need to ask us for anything:</p>
+    <ul>
+        <li><strong>Delete a transcript</strong> in the app and its text, its saved audio copy, and its metadata are removed from your device.</li>
+        <li><strong>Delete the app</strong> and everything it stored goes with it.</li>
+        <li><strong>Export</strong> any transcript as text, or share the audio, at any time.</li>
+    </ul>
+    <p>We hold no copy of your data, so there is nothing for us to retain, return, or delete on your behalf. If you are exercising rights under the GDPR, the CCPA, or similar law, the honest answer is that we hold no personal information about you to access, correct, port, or erase.</p>
+
+    <hr>
+
+    <h2>Children</h2>
+    <p>Xenophon is a professional tool and is not directed at children. We do not knowingly collect information from anyone, of any age.</p>
+
+    <hr>
+
+    <h2>Changes to this policy</h2>
+    <p>If the app's behaviour changes in a way that affects this policy — for example if optional cloud sync were ever added — this policy will be updated before that version ships, and the change will be described rather than quietly folded in. The "last updated" date at the top will change.</p>
+
+    <hr>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy, or about anything in it:</p>
+    <p><strong><a href="mailto:contact@bitcross.app">contact@bitcross.app</a></strong></p>
+    <p>A person reads that address.</p>
+</body>
+
+</html>
